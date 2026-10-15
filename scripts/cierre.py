@@ -130,11 +130,11 @@ def main():
                 total_excepciones += 1
 
     # Regla 8: totales.
-    with open(os.path.join(OUT, "totales.txt"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(OUT, "totales.txt"), "w", encoding="utf-8", newline="") as fh:
         fh.write("total_afiliados={0}\nactivos={1}\ninactivos={2}\nexcepciones={3}\n".format(len(afiliados), len(activos), inactivos, total_excepciones))
 
     codigo, n = error_mas_frecuente()
-    with open(os.path.join(OUT, "top_error.txt"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(OUT, "top_error.txt"), "w", encoding="utf-8", newline="") as fh:
         fh.write("codigo_error={0}\nocurrencias={1}\n".format(codigo, n))
 
     print("Cierre terminado: {0} afiliados, {1} activos, {2} inactivos, {3} excepciones".format(len(afiliados), len(activos), inactivos, total_excepciones))
