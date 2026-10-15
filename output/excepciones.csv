@@ -1,0 +1,105 @@
+documento,tipo,detalle
+1020751549,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1040982710,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1048335414,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1341837102,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1344766047,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1366075689,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1367901463,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1371283409,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+13824220,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1396374155,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+3719530955,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+3753924849,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+3795423152,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+6035736385,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+88253924,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+88361387,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+88576694,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+8869124143,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+8869583590,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+88724664,DUPLICADO,documento repetido 2 veces en AFI_MAE; se conserva la primera aparicion
+1062105218,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+1078175958,SIN_EMPRESA,COD_EMP=1999 vacio o inexistente en EMPRESA
+13291368,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+1345926029,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+1358774823,SIN_EMPRESA,COD_EMP=0000 vacio o inexistente en EMPRESA
+13645711,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+3703303283,SIN_EMPRESA,COD_EMP=9999 vacio o inexistente en EMPRESA
+37187038,SIN_EMPRESA,COD_EMP=8888 vacio o inexistente en EMPRESA
+3729836957,SIN_EMPRESA,COD_EMP=9999 vacio o inexistente en EMPRESA
+3743426246,SIN_EMPRESA,COD_EMP=0000 vacio o inexistente en EMPRESA
+3757915872,SIN_EMPRESA,COD_EMP=9999 vacio o inexistente en EMPRESA
+6047908454,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+6062486330,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+8802342426,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+8810057414,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+88242437,SIN_EMPRESA,COD_EMP=0000 vacio o inexistente en EMPRESA
+8839725844,SIN_EMPRESA,COD_EMP= vacio o inexistente en EMPRESA
+8876014103,SIN_EMPRESA,COD_EMP=1999 vacio o inexistente en EMPRESA
+1129041670,BENEFICIARIO_HUERFANO,afiliado 1026695269 no existe en AFI_MAE
+1146346706,BENEFICIARIO_HUERFANO,afiliado 1012169149 no existe en AFI_MAE
+1169047480,BENEFICIARIO_HUERFANO,afiliado 1348020713 no existe en AFI_MAE
+1180158629,BENEFICIARIO_HUERFANO,afiliado 1072852916 no existe en AFI_MAE
+1197831201,BENEFICIARIO_HUERFANO,afiliado 1349940305 no existe en AFI_MAE
+12021084,BENEFICIARIO_HUERFANO,afiliado 1369273925 no existe en AFI_MAE
+1205545819,BENEFICIARIO_HUERFANO,afiliado 1093262110 no existe en AFI_MAE
+12103475,BENEFICIARIO_HUERFANO,afiliado 1309036275 no existe en AFI_MAE
+1229863944,BENEFICIARIO_HUERFANO,afiliado 1095957861 no existe en AFI_MAE
+1232818011,BENEFICIARIO_HUERFANO,afiliado 1307007749 no existe en AFI_MAE
+12432317,BENEFICIARIO_HUERFANO,afiliado 1099805066 no existe en AFI_MAE
+1247380700,BENEFICIARIO_HUERFANO,afiliado 13728590 no existe en AFI_MAE
+1260428286,BENEFICIARIO_HUERFANO,afiliado 1311452235 no existe en AFI_MAE
+1266491711,BENEFICIARIO_HUERFANO,afiliado 1387837657 no existe en AFI_MAE
+12775950,BENEFICIARIO_HUERFANO,afiliado 1078942495 no existe en AFI_MAE
+1048555096,CODIGO_INVALIDO,EST_AFI=9 no es A ni I
+1061320764,CODIGO_INVALIDO,EST_AFI=Z no es A ni I
+1064872879,CODIGO_INVALIDO,EST_AFI=Z no es A ni I
+1066380991,CODIGO_INVALIDO,EST_AFI=P no es A ni I
+13254412,CODIGO_INVALIDO,EST_AFI=X no es A ni I
+13684450,CODIGO_INVALIDO,EST_AFI=9 no es A ni I
+1386135212,CODIGO_INVALIDO,EST_AFI=Z no es A ni I
+13973538,CODIGO_INVALIDO,EST_AFI=Z no es A ni I
+60256758,CODIGO_INVALIDO,EST_AFI=P no es A ni I
+8807180112,CODIGO_INVALIDO,EST_AFI=9 no es A ni I
+8810996444,CODIGO_INVALIDO,EST_AFI=P no es A ni I
+8825832436,CODIGO_INVALIDO,EST_AFI=X no es A ni I
+88296276,CODIGO_INVALIDO,EST_AFI=Z no es A ni I
+8865118580,CODIGO_INVALIDO,EST_AFI=P no es A ni I
+1044259063,FECHA_INVALIDA,FEC_AFI=2025-02-30 no se puede interpretar como fecha
+1052051148,FECHA_INVALIDA,FEC_AFI=31/13/2024 no se puede interpretar como fecha
+1058468350,FECHA_INVALIDA,FEC_AFI=SIN FECHA no se puede interpretar como fecha
+3709342692,FECHA_INVALIDA,FEC_AFI=2024-00-10 no se puede interpretar como fecha
+3757045739,FECHA_INVALIDA,FEC_AFI=00000000 no se puede interpretar como fecha
+60087263,FECHA_INVALIDA,FEC_AFI=15-15-2019 no se puede interpretar como fecha
+6026309765,FECHA_INVALIDA,FEC_AFI=N/A no se puede interpretar como fecha
+60692566,FECHA_INVALIDA,FEC_AFI=SIN FECHA no se puede interpretar como fecha
+6089354914,FECHA_INVALIDA,FEC_AFI=31/13/2024 no se puede interpretar como fecha
+8803649849,FECHA_INVALIDA,FEC_AFI=2023/02/29 no se puede interpretar como fecha
+8830134354,FECHA_INVALIDA,FEC_AFI=2025-02-30 no se puede interpretar como fecha
+8874391659,FECHA_INVALIDA,FEC_AFI=00000000 no se puede interpretar como fecha
+1000385358,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1002471016,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1008958781,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+1013042442,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1021958956,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+1027394279,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1027899673,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1032087547,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1043196119,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1057370088,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1084155486,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+1307174900,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+13198168,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+13857633,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+3719889042,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+3739675472,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+3741495054,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+3785034513,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
+60213545,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+6039035908,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+6060554836,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+60638164,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+60838637,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+8832988347,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+88647779,CRUCE_NO_COINCIDE,"Caja Oriente=VIGENTE, nuestro estado=I"
