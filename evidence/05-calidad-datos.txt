@@ -1,0 +1,27 @@
+$ tail -n +2 data/AFI_MAE.csv | wc -l
+1520
+
+$ tail -n +2 data/AFI_MAE.csv | cut -d, -f1 | sort | uniq -d | wc -l   # documentos duplicados
+20
+
+$ tail -n +2 data/AFI_MAE.csv | cut -d, -f7 | sort | uniq -c   # estados (solo A e I son validos)
+      3 9
+   1225 A
+    281 I
+      4 P
+      2 X
+      5 Z
+
+$ tail -n +2 data/AFI_MAE.csv | awk -F, '$8==""' | wc -l   # COD_EMP vacio
+9
+
+$ awk -F, 'NR==FNR{m[$1]=1;next} FNR>1 && !($2 in m)' data/AFI_MAE.csv data/AFI_BEN.csv | wc -l   # beneficiarios huerfanos
+15
+
+$ cut -d, -f2 output/excepciones.csv | tail -n +2 | sort | uniq -c | sort -rn
+     25 CRUCE_NO_COINCIDE
+     20 DUPLICADO
+     18 SIN_EMPRESA
+     15 BENEFICIARIO_HUERFANO
+     14 CODIGO_INVALIDO
+     12 FECHA_INVALIDA

@@ -1,0 +1,18 @@
+$ ./run.sh && md5sum output/* > /tmp/primera.md5 && cat /tmp/primera.md5
+Cierre terminado: 1500 afiliados, 1194 activos, 274 inactivos, 104 excepciones
+0aa760981fa74fcece4765dc29dede50  output/afiliados_activos.csv
+cf52e6a06d43063cb0c6d10681c3603a  output/excepciones.csv
+89b4d9ab3a279c717acc1576267afcb9  output/top_error.txt
+5ef90ce251dce5c380690dc1459edbc8  output/totales.txt
+
+$ ./run.sh && md5sum output/* | diff - /tmp/primera.md5 && echo 'salidas identicas en dos corridas'
+Cierre terminado: 1500 afiliados, 1194 activos, 274 inactivos, 104 excepciones
+salidas identicas en dos corridas
+
+$ rm -rf output && ./run.sh && md5sum output/* | diff - /tmp/primera.md5 && echo 'identicas tras borrar output/'
+Cierre terminado: 1500 afiliados, 1194 activos, 274 inactivos, 104 excepciones
+identicas tras borrar output/
+
+$ grep -c 'mv \|mkdir ' scripts/cierre.sh scripts/cierre.py
+scripts/cierre.sh:0
+scripts/cierre.py:0

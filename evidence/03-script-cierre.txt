@@ -1,0 +1,27 @@
+$ grep -n 'ENTRADA=\|mkdir\|mv ' /mnt/user-data/uploads/cierre.sh   # script heredado
+8:ENTRADA=/opt/cierre/entrada
+11:mkdir $SALIDA
+32:mkdir -p $ENTRADA/procesados
+33:mv $ENTRADA/AFI_MAE.csv $ENTRADA/procesados/
+
+$ find /opt -maxdepth 2 -name entrada 2>/dev/null | wc -l   # /opt/cierre/entrada no existe
+0
+
+$ find data -name '*.csv' | sort
+data/AFI_BEN.csv
+data/AFI_MAE.csv
+data/APORTES.csv
+data/EMPRESA.csv
+data/extracto_caja_oriente.csv
+
+$ chmod +x run.sh scripts/cierre.sh scripts/cierre.py && ls -l run.sh scripts/
+-rwxr-xr-x 1 root root  153 Oct 14 02:07 run.sh
+
+scripts/:
+total 12
+-rwxr-xr-x 1 root root 6234 Oct 14 02:07 cierre.py
+-rwxr-xr-x 1 root root  192 Oct 14 02:07 cierre.sh
+
+$ grep -n '^DATA =\|^OUT =' scripts/cierre.py
+17:DATA = os.path.join(ROOT, "data")
+19:OUT = os.path.join(ROOT, "output")

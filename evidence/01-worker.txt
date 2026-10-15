@@ -1,0 +1,21 @@
+$ grep -m2 CIE-1107 logs/worker.log
+[2026-09-30T20:35:25Z] [ERROR] codigo=CIE-1107 detalle="Configuración inválida del intervalo de ejecución" lote=281
+[2026-09-30T20:35:30Z] [ERROR] codigo=CIE-1107 detalle="Configuración inválida del intervalo de ejecución" lote=300
+
+$ grep -c CIE-1107 logs/worker.log
+158
+
+$ grep -n WORKER_INTERVAL /mnt/user-data/uploads/_env.example   # antes
+17:WORKER_INTERVAL_SECONDS=30s
+
+$ grep -n WORKER_INTERVAL .env.example   # despues
+18:WORKER_INTERVAL_SECONDS=30
+
+$ sed -n '/def load_interval/,/sys.exit/p' services/worker/worker.py
+def load_interval():
+    raw = os.environ.get("WORKER_INTERVAL_SECONDS", "")
+    try:
+        return int(raw)
+    except ValueError:
+        log("ERROR", "codigo=CIE-1107 WORKER_INTERVAL_SECONDS debe ser un entero de segundos; valor recibido: '{0}'".format(raw))
+        sys.exit(1)

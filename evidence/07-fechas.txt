@@ -1,0 +1,21 @@
+$ grep -c CIE-3301 logs/worker.log
+298
+
+$ tail -n +2 data/AFI_MAE.csv | cut -d, -f9 | sed -E 's/[0-9]/9/g' | sort | uniq -c | sort -rn
+   1493 9999-99-99
+     11 99999999
+     11 99/99/9999
+      2 SIN FECHA
+      1 N/A
+      1 9999/99/99
+      1 99-99-9999
+
+$ grep -c FECHA_INVALIDA output/excepciones.csv
+12
+
+$ grep FECHA_INVALIDA output/excepciones.csv | head -5
+1044259063,FECHA_INVALIDA,FEC_AFI=2025-02-30 no se puede interpretar como fecha
+1052051148,FECHA_INVALIDA,FEC_AFI=31/13/2024 no se puede interpretar como fecha
+1058468350,FECHA_INVALIDA,FEC_AFI=SIN FECHA no se puede interpretar como fecha
+3709342692,FECHA_INVALIDA,FEC_AFI=2024-00-10 no se puede interpretar como fecha
+3757045739,FECHA_INVALIDA,FEC_AFI=00000000 no se puede interpretar como fecha

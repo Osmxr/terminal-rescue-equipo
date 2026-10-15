@@ -1,0 +1,22 @@
+$ head -3 data/extracto_caja_oriente.csv
+id_afiliado;nombres_apellidos;situacion;fecha_reporte
+000013022985;DANIELA LOPEZ OCHOA;VIGENTE;30/09/2026
+000013664691;VALENTINA DUARTE DIAZ;VIGENTE;30/09/2026
+
+$ tail -n +2 data/extracto_caja_oriente.csv | wc -l
+325
+
+$ cut -d';' -f3 data/extracto_caja_oriente.csv | tail -n +2 | sort | uniq -c
+     59 RETIRADO
+    266 VIGENTE
+
+$ grep -c CRUCE_NO_COINCIDE output/excepciones.csv
+25
+
+$ grep CRUCE_NO_COINCIDE output/excepciones.csv | head -3
+1000385358,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1002471016,CRUCE_NO_COINCIDE,documento del extracto no existe en AFI_MAE
+1008958781,CRUCE_NO_COINCIDE,"Caja Oriente=RETIRADO, nuestro estado=A"
+
+$ head -1 output/afiliados_activos.csv
+documento,nombre,estado,cod_empresa,empresa,beneficiarios,ultimo_aporte

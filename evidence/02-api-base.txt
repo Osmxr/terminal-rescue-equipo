@@ -1,0 +1,19 @@
+$ grep -m2 CIE-2210 logs/worker.log
+[2026-09-30T20:35:22Z] [ERROR] codigo=CIE-2210 detalle="conexión rechazada para el usuario cierre_app" lote=209
+[2026-09-30T20:35:35Z] [ERROR] codigo=CIE-2210 detalle="conexión rechazada para el usuario cierre_app" lote=215
+
+$ grep -c CIE-2210 logs/worker.log logs/database.log
+logs/worker.log:154
+logs/database.log:306
+
+$ grep -n '^  cierre-' docker-compose.yml
+4:  cierre-db:
+20:  cierre-api:
+29:  cierre-worker:
+37:  cierre-db-data:
+
+$ grep -n DATABASE_HOST /mnt/user-data/uploads/_env.example   # antes: no coincide con ningun servicio
+7:DATABASE_HOST=cierre-database
+
+$ grep -n DATABASE_HOST .env.example   # despues: nombre del servicio del compose
+8:DATABASE_HOST=cierre-db

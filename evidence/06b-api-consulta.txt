@@ -1,0 +1,8 @@
+$ curl -s -w ' [%{http_code}]' localhost:8081/afiliados/3756530718
+{"documento": "3756530718", "nombre": "CAROLINA CASTRO CASTELLANOS", "estado": "ACTIVO", "empresa": "CONSTRUCTORA SAN LUIS S EN C"} [200]
+$ curl -s -w ' [%{http_code}]' localhost:8081/afiliados/88121168
+{"documento": "88121168", "nombre": "VALENTINA SANCHEZ SILVA", "estado": "INACTIVO", "empresa": "AGROPECUARIA LA ESPERANZA S EN C"} [200]
+$ curl -s -w ' [%{http_code}]' localhost:8081/afiliados/6015866271
+{"documento": "6015866271", "nombre": "HERNAN MOLINA RODRIGUEZ", "estado": "ACTIVO", "empresa": "CONFECCIONES SANTANDER LTDA"} [200]
+$ curl -s -w ' [%{http_code}]' localhost:8081/afiliados/0000000001
+{"error": "afiliado no encontrado"} [404]

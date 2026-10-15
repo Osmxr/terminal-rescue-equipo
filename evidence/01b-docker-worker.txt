@@ -1,0 +1,12 @@
+$ docker compose ps
+NAME                              IMAGE                           COMMAND                  SERVICE         CREATED         STATUS                   PORTS
+terminal-rescue-cierre-api-1      terminal-rescue-cierre-api      "python app.py"          cierre-api      5 minutes ago   Up 4 minutes             0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+terminal-rescue-cierre-db-1       postgres:16-alpine              "docker-entrypoint.s…"   cierre-db       5 minutes ago   Up 5 minutes (healthy)   5432/tcp
+terminal-rescue-cierre-worker-1   terminal-rescue-cierre-worker   "python worker.py"       cierre-worker   5 minutes ago   Up 4 minutes             
+
+$ docker compose logs cierre-worker | tail -5
+cierre-worker-1  | [2026-10-15T04:08:26Z] [INFO] conciliacion registros=1500 documentos_distintos=1500
+cierre-worker-1  | [2026-10-15T04:08:56Z] [INFO] conciliacion registros=1500 documentos_distintos=1500
+cierre-worker-1  | [2026-10-15T04:09:26Z] [INFO] conciliacion registros=1500 documentos_distintos=1500
+cierre-worker-1  | [2026-10-15T04:09:56Z] [INFO] conciliacion registros=1500 documentos_distintos=1500
+cierre-worker-1  | [2026-10-15T04:10:26Z] [INFO] conciliacion registros=1500 documentos_distintos=1500

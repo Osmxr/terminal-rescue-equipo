@@ -1,0 +1,17 @@
+$ cat control/hoja_control.csv
+clave,valor
+fecha_corte,2026-09-30
+total_afiliados,1500
+activos,1194
+inactivos,274
+
+$ cat output/totales.txt
+total_afiliados=1500
+activos=1194
+inactivos=274
+excepciones=104
+
+$ for k in total_afiliados activos inactivos; do a=$(grep "^$k," control/hoja_control.csv | cut -d, -f2); b=$(grep "^$k=" output/totales.txt | cut -d= -f2); echo "$k control=$a cierre=$b"; done
+total_afiliados control=1500 cierre=1500
+activos control=1194 cierre=1194
+inactivos control=274 cierre=274

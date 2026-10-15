@@ -1,0 +1,10 @@
+$ docker compose logs cierre-api | tail -5
+cierre-api-1  | 2026-10-15 04:05:56,549 INFO [cierre-api] cierre-api escuchando en el puerto 8081 (base: cierre-db)
+cierre-api-1  | 2026-10-15 04:06:47,248 INFO [cierre-api] GET /afiliados/3756530718 200
+
+$ docker compose exec cierre-db psql -U cierre -d cierre -c "SELECT count(*), count(DISTINCT nro_doc) FROM afi_mae"
+ count | count 
+-------+-------
+  1500 |  1500
+(1 row)
+

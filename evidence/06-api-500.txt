@@ -1,0 +1,20 @@
+$ grep -c CIE-5003 logs/api.log
+700
+
+$ tail -n +2 data/AFI_MAE.csv | awk -F, '$4==""' | wc -l   # NOM2 vacio -> NULL en la base -> TypeError en app.py
+490
+
+$ diff /mnt/user-data/uploads/app.py services/api/app.py
+25c25
+< JOIN empresa e ON e.cod_emp = a.cod_emp
+---
+> LEFT JOIN empresa e ON e.cod_emp = a.cod_emp
+26a27
+> ORDER BY a.ctid
+53,54c54,56
+<     nombre = nom1 + " " + nom2 + " " + ape1 + " " + ape2
+<     return {"documento": nro_doc, "nombre": nombre.strip(), "estado": ESTADOS[est_afi], "empresa": nom_emp}
+---
+>     # nom2/ape2 llegan NULL cuando el segundo nombre/apellido viene vacío en el CSV
+>     nombre = " ".join(parte.strip() for parte in (nom1, nom2, ape1, ape2) if parte and parte.strip())
+>     return {"documento": nro_doc, "nombre": nombre, "estado": ESTADOS.get(est_afi, "INVALIDO"), "empresa": nom_emp}
