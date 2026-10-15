@@ -80,3 +80,5 @@ Corregimos la configuración (`WORKER_INTERVAL_SECONDS` con sufijo y `DATABASE_H
 ## Limitaciones y pendientes
 
 El cierre lee los CSV de `data/` y no consulta la base de datos directamente. Los logs de `logs/` son una foto estática de la noche del incidente; el worker solo concilia conteos y no corrige datos. Falta automatizar la ejecución mensual del cierre.
+
+Verificamos a mano con Docker que los tres servicios quedan en running y que la API responde 200 y 404 según el documento. Falta ejecutar el validador completo en un entorno Linux, porque en Windows con WSL sin distribución no pudimos comprobar la sintaxis de los scripts con bash.
